@@ -9,6 +9,8 @@ import MyAppointments from "./pages/MyAppointments";
 import QueueStatus from "./pages/QueueStatus";
 import AppointmentDetails from "./pages/AppointmentDetails";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminAccessRequest from "./pages/AdminAccessRequest";
+import Settings from "./pages/Settings";
 
 import "./App.css";
 import "./Auth.css";
@@ -50,6 +52,14 @@ function App() {
 
   if (page === "admin") {
     return <AdminDashboard onNavigate={handleNavigate} />;
+  }
+
+  if (page === "admin-request") {
+    return <AdminAccessRequest onNavigate={handleNavigate} />;
+  }
+
+  if (page === "settings") {
+    return <Settings onNavigate={handleNavigate} />;
   }
 
   return (

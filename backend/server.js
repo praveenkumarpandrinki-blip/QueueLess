@@ -7,8 +7,9 @@ const authRoutes = require("./routes/authRoutes");
 const serviceRoutes = require("./routes/serviceRoutes");
 const appointmentRoutes = require("./routes/appointmentRoutes");
 const userAppointmentRoutes = require("./routes/userAppointmentRoutes");
-const queueRoutes=require("./routes/queueRoutes");
-const adminRoutes=require("./routes/adminRoutes");
+const queueRoutes = require("./routes/queueRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+const adminRequestRoutes = require("./routes/adminRequestRoutes");
 
 const app = express();
 
@@ -19,8 +20,9 @@ app.use("/api/auth", authRoutes);
 app.use("/api/services", serviceRoutes);
 app.use("/api/appointments", appointmentRoutes);
 app.use("/api/my-appointments", userAppointmentRoutes);
-app.use("/api/queue",queueRoutes);
-app.use("/api/admin",adminRoutes);
+app.use("/api/queue", queueRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/admin-requests", adminRequestRoutes);
 
 app.get("/", (req, res) => {
   res.json({
