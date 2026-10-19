@@ -319,3 +319,22 @@ This project was developed as a practical full-stack application to strengthen s
 📄 License
 
 This project is created for educational and portfolio purposes.
+## Screenshots
+
+### Home Page
+![QueueLess Home Page](Homepage.png)
+
+### Appointment Booking
+![Appointment Booking](BookAppointments.png)
+
+### Queue Status
+![Queue Status](QueueStatus.png)
+
+### Customer Dashboard
+![Customer Dashboard](CustomerDashboard.png)
+
+### Admin Dashboard
+![Admin Dashboard](AdminDashBoard.png)
+
+### Settings
+![Settings](Settings.png)
